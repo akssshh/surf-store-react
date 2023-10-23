@@ -5,7 +5,8 @@ import reducer from "../reducer/productReducer";
 
 const AppContext = createContext();
 
-const API = "https://surf-api-production.up.railway.app/products";
+// const API = "https://surf-api-production.up.railway.app/products";
+const API = "http://localhost:5001/products";
 
 const initialState = {
   isLoading: false,
