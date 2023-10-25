@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // import { NavLink } from "react-router-dom"
+import FormatPrice from "@/app/Helpers/FormatPrice";
 
 const Product = (curElem) => {
-  const { id, name, image, price } = curElem;
+  const { _id, name, image, price } = curElem;
   return (
-    <Link href={`/singleproduct`} key={id}>
+    <Link href={`/singleproduct/${_id}`} key={_id}>
       <div className="relative block group">
         <Image
           src={image}
@@ -23,6 +24,7 @@ const Product = (curElem) => {
             Shop Now
           </span>
         </div>
+        <p>{<FormatPrice price={price} />}</p>
       </div>
     </Link>
   );

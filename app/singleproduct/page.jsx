@@ -1,9 +1,12 @@
 import React from 'react'
 
-const SingleProduct = () => {
+const page = () => {
   return (
-    <div>I am SingleProduct</div>
+    <div>
+        yayyy
+        {console.log("hello")}
+    </div>
   )
 }
 
-export default SingleProduct
+export default page
